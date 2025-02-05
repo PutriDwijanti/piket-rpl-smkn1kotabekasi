@@ -1,0 +1,102 @@
+/* Body layout for centering content */
+body {
+    font-family: Verdana ;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure full screen height */
+    background-color: #f9f9f9;
+}
+
+/* Loading container */
+.loading-container {
+    text-align: center;
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Loading icon style */
+.shield-icon img {
+    width: 140px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+/* Title style */
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    color: green;
+    margin-bottom: 20px;
+}
+
+/* Loading dots animation */
+.loading-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.loading-animation span {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    animation: pulse 1.2s infinite;
+}
+
+.loading-animation span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loading-animation span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.loading-animation span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.loading-animation span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+/* Pulse animation for loading dots */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Footer styling */
+footer {
+    background-color: #ffffff;
+    color: green;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Additional footer styles if needed */
+footer a {
+    color: green;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

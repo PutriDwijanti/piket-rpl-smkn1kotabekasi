@@ -1,0 +1,132 @@
+/* Style body untuk tata letak */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url('../img/School.jpeg') no-repeat center center fixed; 
+    background-size: cover; 
+    justify-content: center;
+    align-items: center;
+}
+
+/* Overlay untuk memastikan teks tetap terlihat jelas */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); 
+    z-index: -1;
+}
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    color: green;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: green;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+/* Kotak register */
+.register-container {
+    background-color: rgba(255, 255, 255, 0.70);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    margin-top: 60px; 
+}
+
+/* Judul register */
+h3 {
+    color: green;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-right: 96px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Input field */
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Tombol register */
+button {
+    width: 80%;
+    padding: 10px;
+    margin: 15px auto 0;
+    background-color: #66BBFF; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block; 
+}
+
+button:hover {
+    background-color: #0066CC; 
+}
+
+/* Pesan feedback */
+.feedback-message {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Styling untuk <p> */
+p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555; /* Warna teks */
+    text-align: center; /* Teks rata tengah */
+}
+
+/* Styling untuk link di dalam <p> */
+p a {
+    color: #4CAF50; /* Warna link hijau */
+    text-decoration: none; /* Hilangkan garis bawah */
+    font-weight: bold; /* Teks lebih tebal */
+}
+
+p a:hover {
+    text-decoration: underline; /* Garis bawah saat di-hover */
+    color: #45a049; /* Warna hijau lebih gelap saat di-hover */
+}

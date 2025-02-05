@@ -1,0 +1,190 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('../img/School.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Overlay agar teks lebih terlihat */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* Overlay semi-transparan */
+    z-index: -1;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: green;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+/* Kontainer untuk Dashboard & Koordinator */
+.top-bar {
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Tombol Kembali ke Dashboard */
+.dashboard-text {
+    color: #007BFF;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 8px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.dashboard-text:hover {
+    background: #007BFF;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Ikon Dashboard */
+.dashboard-text i {
+    font-size: 18px;
+}
+
+/* Label Konfirmasi */
+.Konfirmasi-label {
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+}
+
+/* Kontainer utama */
+.crud-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+/* Judul */
+h3 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+/* Pesan CRUD */
+p {
+    color: green;
+    font-weight: bold;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Header Tabel */
+th {
+    background: #007BFF;
+    color: white;
+    padding: 12px;
+}
+
+/* Baris Tabel */
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Warna selang-seling */
+tr:nth-child(even) {
+    background: rgba(0, 0, 255, 0.05);
+}
+
+/* Gambar */
+img {
+    width: 50px;
+    border-radius: 5px;
+}
+
+button {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+button.edit-btn {
+    background: #28a745;
+}
+
+button.edit-btn:hover {
+    background: #218838;
+}
+
+button.delete-btn {
+    background: #dc3545;
+}
+
+button.delete-btn:hover {
+    background: #c82333;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: green;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
